@@ -1,7 +1,0 @@
-load_schema.ingame(spark, 'pc', 'live-competitive', 'LogVehicleRide', '2021-01-25', '2021-02-01')\
-    .withColumn('vehicleId', F.split(F.col('vehicle.vehicleId'), '_')[0])\
-    .select('date', 'session_id', 'character.accountId', 'vehicleId').dropDuplicates()\
-    .groupBy('date', 'vehicleId').agg(F.count(F.col('accountId')).alias('CountRide'))\
-    .orderBy('CountRide')\
-    .sort(F.desc('CountRide'))\
-    .show(10, False)

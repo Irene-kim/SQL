@@ -1,5 +1,6 @@
-# pyspark / Postgre SQL
+# Practice SQL 
 
-* Useful codes for Pyspark and PostgreSQL 
+Written with Wiki docs 
+* Pyspark and PostgreSQL 
+* BigQuery codes
 
-* Written in Wiki docs 
